@@ -1,0 +1,44 @@
+/* Чем мы занимаемся */
+
+.occupation__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.occupation-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.occupation-list .occupation-list__item + .occupation-list__item {
+  margin-left: 30px;
+}
+
+.occupation-list__img {
+  display: block;
+}
+
+.occupation-list .occupation-list__item {
+  position: relative;
+}
+
+.occupation-list__text {
+  position: absolute;
+  z-index: 0;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: #fff;
+  background: rgba(47, 48, 58, 0.8);
+}
