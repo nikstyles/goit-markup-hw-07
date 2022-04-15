@@ -628,6 +628,10 @@ body {
   justify-content: center;
 }
 
+.check-icon {
+  fill: currentColor;
+}
+
 .policy__text span {
   width: 14px;
   height: 13px;
@@ -640,11 +644,7 @@ body {
   color: transparent;
 }
 
-.check-icon {
-  fill: currentColor;
-}
-
-.checkbox-policy:checked + .policy__text > span {
+.policy__checkbox:checked + .policy__text > span {
   background: var(--accent-color);
   border: none;
   color: var(--primary-white-color);

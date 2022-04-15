@@ -121,17 +121,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    & span {
-      width: 14px;
-      height: 13px;
-      border: 2px solid var(--title-text-color);
-      border-radius: 2px;
-      margin-right: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: transparent;
-    }
   }
 }
 
@@ -139,7 +128,19 @@
   fill: currentColor;
 }
 
-.checkbox-policy:checked + .policy__text > span {
+.policy__text span {
+  width: 14px;
+  height: 13px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+}
+
+.policy__checkbox:checked + .policy__text > span {
   background: var(--accent-color);
   border: none;
   color: var(--primary-white-color);
